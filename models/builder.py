@@ -152,7 +152,7 @@ def build_efficientnet(pretrained: bool = True,
 def build_vit16(pretrained: str = "./vit_base_patch16_224_miil_21k.pth",
                 return_nodes: Union[dict, None] = None,
                 num_selects: Union[dict, None] = None, 
-                img_size: int = 448,
+                img_size: int = 384,
                 use_fpn: bool = True,
                 fpn_size: int = 512,
                 proj_type: str = "Linear",
@@ -217,7 +217,7 @@ def build_vit16(pretrained: str = "./vit_base_patch16_224_miil_21k.pth",
                                    use_selection = use_selection,
                                    num_classes = num_classes,
                                    num_selects = num_selects, 
-                                   use_combiner = num_selects,
+                                   use_combiner = use_combiner,
                                    comb_proj_size = comb_proj_size)
 
 

@@ -1,0 +1,37 @@
+project_name: SMUAIC25
+exp_name: PrTrTst
+use_wandb: False
+wandb_entity: professional_team
+train_root: /root/autodl-tmp/RemoteSMUAIC/data/train_images/train_images
+val_root: ~
+val_split: 0.1
+test_root:  /root/autodl-tmp/RemoteSMUAIC/data/test_images/test_images
+data_size: 224
+num_workers: 2
+batch_size: 64
+model_name: resnet50
+pretrained: /root/autodl-tmp/records/SMUAIC25/PrTrTst/backup/best.pt
+optimizer: SGD
+max_lr: 0.0005
+wdecay: 0.0005
+max_epochs: 70
+warmup_batchs: 0
+use_amp: True
+use_fpn: True
+fpn_size: 512
+use_selection: True
+num_classes: 400
+num_selects: 
+  layer1: 32
+  layer2: 32
+  layer3: 32
+  layer4: 32
+use_combiner: True
+lambda_b: 0.5
+lambda_s: 0.0
+lambda_n: 5.0
+lambda_c: 1.0
+update_freq: 1
+log_freq: 100
+eval_freq: 1
+save_dir: /root/autodl-tmp/FGVC-PIM-master/records/

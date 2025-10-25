@@ -1,0 +1,4 @@
+python vit_pim_main.py --c ./configs/fgvc_vit_smuaic.yaml
+python infer_test.py --c ./configs/fgvc_vit_smuaic.yaml
+python vit_pim_main_sgd.py --c ./configs/fgvc_vit_smuaic-strong.yaml
+python infer_test.py --c ./configs/fgvc_vit_smuaic-strong.yaml
