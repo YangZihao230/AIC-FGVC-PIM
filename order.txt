@@ -3,4 +3,4 @@ python infer_test.py --c ./configs/fgvc_vit_smuaic.yaml
 python vit_pim_main_sgd.py --c ./configs/fgvc_vit_smuaic-strong.yaml
 python infer_test.py --c ./configs/fgvc_vit_smuaic-strong.yaml
 
-python vit_pim_main_adamw.py --c ./configs/fgvc_vit_smuaic-adamw.yaml
+python SwinT_pim_main_sgd.py --c ./configs/AIC_PIM_SwinT.yaml
